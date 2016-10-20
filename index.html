@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ES6 Babel Model</title>
+
+    
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+
+<body>
+    <nav >
+        <div >
+            <div >
+                <a  href="/">
+                   Ecmascript 6
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div >
+        <div >
+            <h1>Hello, Ecmascript 6</h1>
+        </div>
+    </div>
+    <div >
+        <div >
+            <div >
+                <h3>User class</h3>
+                <table id="users" ></table>
+            </div>
+        </div>
+    </div>
+
+    <script src="jspm_packages/system.js"></script>
+    <script src="config.js"></script>
+
+    <script>
+    System.baseUrl = 'dist';
+    System.import('main').catch(console.error.bind(console));
+    </script>
+</body>
+
+</html>
